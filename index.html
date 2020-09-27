@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<title>生产车间运行看板</title>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+<link rel="stylesheet" href="css/bootstrap.min.css?2"> 
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/course-view.css">
+<style>
+table,tbody,tfoot,thead,tr,th,td {
+	margin:0; padding:0; outline:0; font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	border-collapse:collapse;
+	border-spacing:0;
+	border: 0px;
+}
+.tablebox { width: 100%; overflow:hidden; color:#1bb4f9;  font-size: 14px; }
+.tablebox table { width:100%; }
+.tablebox table th,.tablebox table td {	font-size:12px;text-align:center;line-height:36px;}
+.tablebox table th {color:#fff; font-weight: bold; font-size: 14px; background: #1bb4f9; }
+.tablebox table td img {display:inline-block;vertical-align:middle;}
+.tablebox.table_md table td,.tablebox.table_md table th {line-height:40px;}
+</style>
+</head> 
+<body>    
+<div class="container-header">
+	<ul class="nowTime">
+		<li></li>
+		<li></li>
+	</ul>
+	<div class="location">
+		<i class="icon iconfont icon-buoumaotubiao23"></i>
+		<span class="areaName">中国</span>
+		<div class="selectDom">
+			<div class="zProvinceItem" item-level="1">
+				<div class="zprovinceItem-head">
+					<input type="text" id="provinceInputValue" class="currentValue" readonly="" value="请选择" placeholder="请选择">
+				</div>
+				<div class="zprovinceItem-main">
+					<div class="provinceContainer">
+						<div class="provinceTips">全部</div>
+						<ul class="provincelist">
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="zcityItem" item-level="2">
+				<div class="zcityItem-head">
+					<input type="text" class="currentValue" readonly="" value="请选择" placeholder="请选择">
+				</div>
+				<div class="zcityItem-main">
+					<div class="cityContainer">
+						<div class="cityTips">全部</div>
+						<ul class="citylist">
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<h3>生产车间运行看板</h3>
+</div>
+<div class="col-xm-12 col-sm-12"> 
+	<div class="col-xm-3 col-sm-3"> 
+		<div style="height: 30vh;">
+			<div id="box1" style="height:100%;"></div>
+		</div>
+		<div style="height: 30vh;">
+			<div id="box2" style="height:100%;"></div>
+		</div>
+		<div style="height: 30vh;">
+			<div id="box3" style="height:100%;"></div>
+		</div>
+	</div> 
+	
+	<div class="col-xm-6 col-sm-6"> 
+		<div style="height: 45vh;">
+			<div id="box9" style="height:100%;"></div> 
+		</div>
+		<div id="box4" style="height: 55vh;">
+			<div class="tablebox" >
+				<table id="tableId"  cellspacing="0" cellpadding="0">
+					<thead>
+						<tr>
+							<th>订单号</th>
+							<th>款号</th>
+							<th>订单数</th>
+							<th>完成数</th>
+							<th>完成率</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>854852</td>
+							<td>YEMNFA32121312</td>
+							<td>100</td>
+							<td>59</td>
+							<td>59%</td>
+						</tr>
+						<tr>
+							<td>105845</td>
+							<td>RWEUIN231312</td>
+							<td>100</td>
+							<td>89</td>
+							<td>89%</td>
+						</tr>
+						<tr>
+							<td>951271</td>
+							<td>KMAKSO44544</td>
+							<td>100</td>
+							<td>65</td>
+							<td>65%</td>
+						</tr>
+						<tr>
+							<td>117802</td>
+							<td>IORWEIVWQ454545</td>
+							<td>100</td>
+							<td>72</td>
+							<td>72%</td>
+						</tr>
+						<tr>
+							<td>488520</td>
+							<td>EPOREI4487832VC</td>
+							<td>100</td>
+							<td>75</td>
+							<td>75%</td>
+						</tr>
+						<tr>
+							<td>881247</td>
+							<td>KZISMNTKG578748</td>
+							<td>100</td>
+							<td>83</td>
+							<td>83%</td>
+						</tr>
+						<tr>
+							<td>458212</td>
+							<td>2OKCIAQM454</td>
+							<td>100</td>
+							<td>80</td>
+							<td>80%</td>
+						</tr>
+						<tr>
+							<td>369548</td>
+							<td>KLZIQME554854</td>
+							<td>100</td>
+							<td>75</td>
+							<td>75%</td>
+						</tr>
+						<tr>
+							<td>588742</td>
+							<td>PQKMSIZJ4548</td>
+							<td>100</td>
+							<td>95</td>
+							<td>95%</td>
+						</tr>
+						<tr>
+							<td>254854</td>
+							<td>QIZUAWME455824</td>
+							<td>100</td>
+							<td>78</td>
+							<td>78%</td>
+						</tr>
+						<tr>
+							<td>245845</td>
+							<td>OWKENJGJZ25842</td>
+							<td>100</td>
+							<td>81</td>
+							<td>81%</td>
+						</tr>
+						<tr>
+							<td>589452</td>
+							<td>OZKWKJGOA5955</td>
+							<td>100</td>
+							<td>82</td>
+							<td>82%</td>
+						</tr>
+						<tr>
+							<td>344234</td>
+							<td>O2IXJSW82K0</td>
+							<td>100</td>
+							<td>45</td>
+							<td>45%</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div> 
+	</div>
+	<div class="col-xm-3 col-sm-3 "> 
+		<div style="height: 30vh;"> 
+			<div id="box5" style="width: 50%; float: left; height:100%;"></div> 
+			<div id="box6" style="width: 50%; float: left; height:100%;"></div>
+		</div>
+		<div style="height: 30vh;">
+			<div id="box10" style="height:100%;"></div>
+		</div>
+		<div style="height: 30vh;">
+			<div id="box11" style="height:100%;"></div>
+		</div>
+	</div> 
+</div> 
+<script src="js/jquery.min.js"></script>
+<!-- ECharts单文件引入 -->
+<script src="js/echarts.min.js"></script>  
+<script src="js/box1.js"></script>  
+<script src="js/box2.js"></script>  
+<script src="js/box3.js"></script>  
+<script src="js/box4.js"></script>  
+<script src="js/box5.js"></script>  
+<script src="js/box6.js"></script>  
+<script src="js/box9.js"></script>  
+<script src="js/box10.js"></script>  
+<script src="js/box11.js"></script> 
+<script>
+$(document).ready(function(){
+	
+
+
+});
+</script>  
+</body>
+</html>
